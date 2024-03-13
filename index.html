@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./style.css"/>
+    <title>Quizzlet</title>
+</head>
+<body>
+    <div class="quizcontainer">
+        <header>
+            <div>
+                <a href="./scores.html">
+                    <button class="header-highscore" id="view-high-scores">
+                        View High Scores
+                    </button>
+                </a>
+            </div>
+            <div class="timer">
+                <p> Time remaining: <span id="timer"> 0 </span>  </p>
+            </div>
+        </header>
+        <main class="quiz">
+            <div id="start-quiz">
+                <div class="start-page" id="start-screen">
+                    <h1 id="top">Quizzlet</h1>
+                    <p>
+                        Welcome to quizzlet! Here you are tested on your CS knowledge. The questions will be in the form of multiple choice. Have fun!
+                    </p>
+                    <button id="start"> Start Quiz </button>
+                </div>
+            </div>
+
+            <div class="hide" id="questions">
+                <h2 id="sentence"></h2>
+                <div class="choices" id="choices"></div>
+            </div>
+            <div class="hide" id="end-quiz">
+                <h2>Great Job!</h2>
+                <p>You Scored:
+                    <span id="final-score"></span>
+                </p>
+                <p>
+                    Enter you name here:
+                    <input type="text" id="names" max="3"/>
+                    <button id="submit-score">Submit</button>
+                </p>
+            </div>
+            <div id="feedback" class="hide-feedback"></div>
+
+        </main>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
